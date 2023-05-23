@@ -17,9 +17,9 @@
         <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="291" Margin="44,69,0,0" VerticalAlignment="Top" Width="692"/>
         <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="33" Margin="44,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="455"/>
         <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Height="33" Margin="542,31,0,0" VerticalAlignment="Top" Width="138" Background="#FF8FF16C" Click="btnOpenFile_Click"/>
-        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Height="41" Margin="44,371,0,0" VerticalAlignment="Top" Width="120" Background="#FF4EE619"/>
-        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Height="41" Margin="187,371,0,0" VerticalAlignment="Top" Width="125" Background="#FF27DCD8"/>
-        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Center" Height="41" Margin="0,371,0,0" VerticalAlignment="Top" Width="124" Background="#FFEA2020"/>
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Height="41" Margin="44,371,0,0" VerticalAlignment="Top" Width="120" Background="#FF4EE619" Click="btnPlay_Click"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Height="41" Margin="187,371,0,0" VerticalAlignment="Top" Width="125" Background="#FF27DCD8" Click="btnPause_Click"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Center" Height="41" Margin="0,371,0,0" VerticalAlignment="Top" Width="124" Background="#FFEA2020" Click="btnStop_Click"/>
         <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Height="41" Margin="486,371,0,0" VerticalAlignment="Top" Width="125">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
