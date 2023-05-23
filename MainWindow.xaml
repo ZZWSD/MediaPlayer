@@ -14,13 +14,13 @@
                 <GradientStop Color="#FFB41BB5" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="291" Margin="44,69,0,0" VerticalAlignment="Top" Width="692"/>
+        <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="275" Margin="44,69,0,0" VerticalAlignment="Top" Width="691" MediaOpened="MedShow_MediaOpened"/>
         <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="33" Margin="44,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="455"/>
         <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Height="33" Margin="542,31,0,0" VerticalAlignment="Top" Width="138" Background="#FF8FF16C" Click="btnOpenFile_Click"/>
-        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Height="41" Margin="44,371,0,0" VerticalAlignment="Top" Width="120" Background="#FF4EE619" Click="btnPlay_Click"/>
-        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Height="41" Margin="187,371,0,0" VerticalAlignment="Top" Width="125" Background="#FF27DCD8" Click="btnPause_Click"/>
-        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Center" Height="41" Margin="0,371,0,0" VerticalAlignment="Top" Width="124" Background="#FFEA2020" Click="btnStop_Click"/>
-        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Height="41" Margin="486,371,0,0" VerticalAlignment="Top" Width="125">
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Height="41" Margin="44,384,0,0" VerticalAlignment="Top" Width="120" Background="#FF4EE619" Click="btnPlay_Click"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Height="41" Margin="169,384,0,0" VerticalAlignment="Top" Width="125" Background="#FF27DCD8" Click="btnPause_Click"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Height="41" Margin="299,384,0,0" VerticalAlignment="Top" Width="124" Background="#FFEA2020" Click="btnStop_Click"/>
+        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Height="41" Margin="428,384,0,0" VerticalAlignment="Top" Width="125" Click="btnExit_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -28,6 +28,17 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Height="33" Margin="594,384,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.5,0.5" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5" ValueChanged="sliVolume_ValueChanged">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Slider x:Name="sliProgress" HorizontalAlignment="Center" Height="29" Margin="0,350,0,0" VerticalAlignment="Top" Width="710" Background="#FF4EB13A" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
 
     </Grid>
 </Window>
