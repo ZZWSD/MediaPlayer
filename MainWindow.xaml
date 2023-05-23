@@ -28,7 +28,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Height="33" Margin="594,384,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.5,0.5" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5" ValueChanged="sliVolume_ValueChanged">
+        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Height="33" Margin="558,384,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.5,0.5" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5" ValueChanged="sliVolume_ValueChanged">
             <Slider.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -39,6 +39,7 @@
             </Slider.RenderTransform>
         </Slider>
         <Slider x:Name="sliProgress" HorizontalAlignment="Center" Height="29" Margin="0,350,0,0" VerticalAlignment="Top" Width="710" Background="#FF4EB13A" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="38" Margin="699,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
 
     </Grid>
 </Window>
